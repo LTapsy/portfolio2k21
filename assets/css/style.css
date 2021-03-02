@@ -1,0 +1,372 @@
+body{
+    /* background:linear#1f2833; */
+    background:linear-gradient(#131b24,#1f2833);
+}
+
+section{
+    background:white;
+}
+
+nav{
+    /* position: fixed; */
+    position: absolute;
+    width:100%;
+    /* background:#131b24; */
+    z-index: 9999;
+}
+
+nav ul{
+    flex-direction: row;
+    justify-content: flex-end;
+    padding:50px 150px;
+}
+
+nav ul li{
+    margin:0 0 0 30px;
+}
+
+nav ul li i{
+    color:white;
+}
+
+.meBg{
+    position: fixed;
+    height:80vh;
+    bottom:50px;
+    right:50px;
+    z-index:-999;
+    opacity: 0.5;
+}
+
+header{
+    height:100vh;
+    background:url(../images/bg/curve.png);
+    background-size:cover;
+    background-position: bottom;
+    justify-content: center;
+    z-index: 1;
+}
+
+header h1{
+    color:#66fcf1;
+    margin-left:150px;
+    font-size: 60px;
+}
+
+header h3{
+    color:white;
+    margin-left:150px;
+    font-size: 50px;
+}
+
+header p{
+    color:white;
+    width:600px;
+    margin:20px 0 0 150px;
+}
+
+.buttonContainer{
+    margin:50px 0 0 0;
+    flex-direction: row;
+    margin-left:150px;
+}
+
+.buttonContainer button{
+    border:1px solid #66fcf1;
+    background:transparent;
+    border-radius: 10px;
+    color:#66fcf1;
+    width:150px;
+    padding:15px 0;
+    align-items: center;
+    margin:0 20px 0 0;
+}
+
+.buttonContainer button{
+    background:transparent;
+    transition: 0.5s;
+}
+
+.buttonContainer button:hover{
+    background:#66fcf1;
+    color:white;
+    transition: 0.5s;
+}
+
+
+/* ///////////////////////////////////// */
+
+
+.skills{
+    justify-content: center;
+    align-items: center;
+    height:70vh;
+}
+
+.skills h2{
+    font-size: 40px;
+}
+
+.skills h4{
+    font-size: 30px;
+    margin:20px 0;
+    color:#45a29e;
+}
+
+.skills ul{
+    flex-direction: row;
+    margin:20px 0;
+}
+
+.skills ul li img{
+    height:50px;
+    margin:0 20px;
+}
+
+
+/* /////////////////////////////////////// */
+
+
+.about{
+    justify-content: center;
+    align-items: center;
+    height:60vh;
+    background:url(../images/bg/desk.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.about h4{
+    font-size: 40px;
+    width:700px;
+    color:white;
+    text-align: center;
+    filter: drop-shadow(0 0px 10px #0000007c);
+    background:#0000008e;
+    padding:10px;
+}
+
+/* ////////////////////// */
+
+
+.animation{
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+    padding:0 150px;
+}
+
+.animation h2{
+    font-size: 40px;    
+}
+
+.animation .projectInfo h2{
+    font-size: 30px;    
+}
+
+.projectPlanetEarth{
+    width:200px;
+    height:200px;
+    box-shadow: -20px -20px 50px 10px #000 inset,-5px -5px 50px 10px rgba(68, 68, 68, 0.8);
+    background:url('../images/planet/earthsmall.jpg');
+    background-size:cover;
+    border-radius:50%;
+    /* position: absolute;
+    z-index:0;
+    right:150px; */
+    overflow: hidden;
+    /* visibility: hidden; */
+    display: none;
+}
+
+.projectImage{
+    width:300px;
+    height:300px;
+    box-shadow: -20px -20px 50px 10px #000 inset,-5px -5px 50px 10px rgba(0, 0, 0, 0.8);
+    background:url('../images/planet/earth.jpg');
+    background-size:cover;
+    border-radius:50%;
+    /* position: absolute;
+    z-index:0;
+    right:150px; */
+    margin:50px 0;
+    overflow: hidden;
+    animation:planetSpinCounterClockwise 45s linear infinite;
+}
+@keyframes planetSpinCounterClockwise{
+    100%{background-position: 100%;}
+}
+
+.animation .projectInfo h2{
+    text-align: center;
+}
+
+.animation .projectInfo p{
+    text-align: center;
+    color:#45a29e;
+    font-size: 20px;   
+}
+
+
+/* ///////////////////////// */
+
+.projects{
+    background:#1f2833;
+    justify-content: center;
+    align-items: center;
+    padding:150px 0;
+}
+
+.projectCol{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:0 150px;
+    height:600px;
+}
+
+
+.projects h2{
+    color:#45a29e;
+    color:white;
+    font-size: 30px;
+    margin:0 0 50px 0;
+}
+
+.projects .projectTitle h2{
+    color:#45a29e;
+    font-size: 35px;
+}
+
+.projects .projectTitle h3{
+    color:white;
+    font-size: 20px;
+}
+
+.projects .projectTitle ul{
+    margin:0;
+    justify-content: unset;
+    align-items: unset;
+}
+
+.projects .projectTitle ul li{
+    margin:0px 30px 0 0 ;
+}
+
+.projects .projectTitle ul li i{
+    color:#45a29e;
+}
+
+.projects .projectTitle .tagContainer{
+    flex-direction: row;
+    margin:10px 0;
+}
+
+.projects .projectTitle .tagContainer p{
+    font-size:10px;
+    color:white;
+    background:#44974b;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:10px 10px 10px 0;
+    padding:5px;
+    border:1px solid white;
+}
+
+
+.projects .projectTitle.col2 h2{
+    color:#45a29e;
+    font-size: 35px;
+    align-self: flex-end;
+}
+
+.projects .projectTitle.col2 h3{
+    color:white;
+    font-size: 20px;
+    align-self: flex-end;
+    text-align: right;
+}
+
+.projects .projectTitle.col2 ul{
+    margin:0;
+    justify-content: unset;
+    align-items: unset;
+    align-self: flex-end;
+}
+
+.projects .projectTitle.col2 ul li{
+    margin:0px 0 0 30px ;
+}
+
+.projects .projectTitle.col2 ul li i{
+    color:#45a29e;
+}
+
+.projects .projectTitle.col2 .tagContainer{
+    flex-direction: row;
+    margin:10px 0;
+    justify-content: flex-end;
+}
+
+.projects .projectTitle.col2 .tagContainer p{
+    font-size:10px;
+    color:white;
+    background:#44974b;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:10px 10px 10px 0;
+    padding:5px;
+    border:1px solid white;
+}
+
+
+.projects ul{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:50px 0 0 0;
+}
+
+.projects ul li{
+    position: relative;
+    margin:40px;
+}
+
+.projects ul li{
+    transform: scale(1);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 10px #00000000);
+}
+
+.projects ul li:hover{
+    transform: scale(1.02);
+    transition: 0.5s;
+    filter: drop-shadow(0 0 15px #0000008a);
+}
+
+.projects ul li .imgContainer{
+    border-radius: 20px;
+    border:3px solid white;
+    overflow: hidden;
+}
+
+.projects ul li .tagContainer{
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.projects ul li p{
+    font-size:10px;
+    color:white;
+    background:#44974b;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin:10px 10px 10px 0;
+    padding:5px;
+    border:1px solid white;
+}
